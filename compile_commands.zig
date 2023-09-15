@@ -139,7 +139,7 @@ fn getCSources(b: *std.Build, steps: []const *std.Build.CompileStep) []*CSourceF
                     continue;
                 },
                 .other_step => {
-                    compile_steps_list.append(link_object.other_step) catch @panic("OOM");
+                    // compile_steps_list.append(link_object.other_step) catch @panic("OOM");
                 },
                 .system_lib => {
                     continue;
